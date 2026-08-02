@@ -1,4 +1,4 @@
-# Native C++ Pipeline Warmup — Godot Engine 集成
+# Native C++ Pipeline Warmup — Godot Engine 优化
 
 > 在 Godot 引擎渲染层实现的原生管线预热，消除首次渲染的 Shader/Pipeline 编译卡顿。  
 > 附带 Dense200 压力场景的完整 A/B 对比基准测试。
