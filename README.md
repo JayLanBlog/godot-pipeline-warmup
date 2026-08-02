@@ -13,7 +13,7 @@
 
 ## 架构
 
-![Pipeline Warmup 架构总览](../godot/benchmark-comparison/no-warmup-vs-warmup/assets/architecture.png)
+![Pipeline Warmup 架构总览](benchmark-reports/benchmark-comparison/no-warmup-vs-warmup/assets/architecture.png)
 
 *图：Native C++ Pipeline Warmup 架构总览 — Godot Engine 渲染层（C++）→ 数据流 → Benchmark 场景（GDScript） → GPU 驱动*
 
@@ -29,7 +29,7 @@
 
 ### 预热数据流
 
-![Pipeline Warmup 数据流](../godot/benchmark-comparison/no-warmup-vs-warmup/assets/dataflow.png)
+![Pipeline Warmup 数据流](benchmark-reports/benchmark-comparison/no-warmup-vs-warmup/assets/dataflow.png)
 
 *图：完整数据流 — EDITOR-TIME（Manifest 生成）→ RUNTIME 引擎启动（批量编译）→ 场景运行（命中管线）→ ANALYSIS（报告生成）*
 
@@ -56,19 +56,15 @@
 > GPU: NVIDIA RTX 3060 Laptop / 渲染器: Vulkan Forward+ / 引擎: Godot 4.8.dev  
 > **均清除 Shader Cache + Pipeline Cache，冷启动。**
 
-![A/B 对比测试流程](../godot/benchmark-comparison/no-warmup-vs-warmup/assets/ab_test_flow.png)
+![A/B 对比测试流程](benchmark-reports/benchmark-comparison/no-warmup-vs-warmup/assets/ab_test_flow.png)
 
 *图：A/B 对比测试流程 — No Warmup（左侧红色）vs Warmup（右侧绿色）两条对称路径*
 
-![Dense200 场景运行截图](benchmark_results/report/screenshots/scene_midframe.png)
+![Dense200 场景运行截图](benchmark-reports/benchmark-comparison/no-warmup-vs-warmup/assets/scene_midframe.png)
 
 *图 1：Dense200 场景运行中 — 800 个 MeshInstance3D 正逐帧 Reveal*
 
-<video src="benchmark_results/report/screenshots/swam.mp4" controls width="100%"></video>
-
-*图 2：场景运行录屏（mp4 视频，8.87s）*
-
-![No-Warmup vs Warmup 性能对比](benchmark_results/report/charts/no_warmup_vs_warmup_comparison.png)
+![No-Warmup vs Warmup 性能对比](benchmark-reports/benchmark-comparison/no-warmup-vs-warmup/assets/perf_comparison_chart.png)
 
 *图 3：六合一性能分析总图 — Frame Time Overlay、Spike Events、CDF、Log Histogram、KPI Bar、Summary*
 
@@ -211,9 +207,9 @@ python analyze_comparison.py
 
 | 报告 | 格式 | 路径 |
 |------|------|------|
-| 详细基准报告 | Markdown | [BENCHMARK_REPORT.md](benchmark_results/report/BENCHMARK_REPORT.md) |
-| A/B 对比报告 | HTML (ECharts) | [no-warmup-vs-warmup.html](../godot/benchmark-comparison/no-warmup-vs-warmup/no-warmup-vs-warmup.html) |
-| 预热 KPI 报告 | HTML (ECharts) | [benchmark-final.html](../godot/benchmark-final/benchmark-final.html) |
+| 详细基准报告 | Markdown |  |
+| A/B 对比报告 | HTML (ECharts) | [no-warmup-vs-warmup.html](benchmark-reports/benchmark-comparison/no-warmup-vs-warmup/no-warmup-vs-warmup.html) |
+| 预热 KPI 报告 | HTML (ECharts) | [benchmark-final.html](benchmark-reports/benchmark-final/benchmark-final.html) |
 
 ---
 
