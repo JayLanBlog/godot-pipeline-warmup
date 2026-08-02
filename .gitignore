@@ -1,0 +1,16 @@
+# Build Artifacts
+bin/
+*.exe *.dll *.so *.dylib *.pdb *.exp *.lib *.ilk *.obj *.o *.a
+*.pyc __pycache__/
+.scons_cache/ .scon*
+*.tmp *.log *.cache *.DS_Store Thumbs.db
+
+# IDE
+.idea/ .vscode/ .trae/ *.code-workspace .metadata/
+
+# Godot Project
+.godot/ *.import .import/
+
+# Large files to exclude
+/benchmark-project/benchmark_results/report/screenshots/swam.mp4
+/benchmark-project/gdext/

@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "title": "Pipeline Warmup: No-Warmup vs Warmup Comparison",
+    "scene": "StressBenchmarkMain_Dense200 (800 MeshInstance3D)",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "renderer": "Vulkan Forward+",
+    "engine": "Godot 4.8.dev (native C++ warmup)",
+    "date": "2026-08-01"
+  },
+  "no_warmup": {
+    "label": "No Warmup",
+    "total_frames": 1628,
+    "mean": 8.45,
+    "min": 1.48,
+    "max": 150.0,
+    "p50": 6.75,
+    "p95": 14.68,
+    "p99": 16.67,
+    "spikes_16ms": 29,
+    "spikes_33ms": 2,
+    "spikes_50ms": 2,
+    "spikes_100ms": 1,
+    "top10_worst": [
+      [
+        0,
+        150.0
+      ],
+      [
+        1,
+        66.67
+      ],
+      [
+        1590,
+        21.15
+      ],
+      [
+        1594,
+        20.27
+      ],
+      [
+        1591,
+        20.07
+      ],
+      [
+        1592,
+        18.97
+      ],
+      [
+        1595,
+        18.06
+      ],
+      [
+        1596,
+        18.06
+      ],
+      [
+        1589,
+        17.86
+      ],
+      [
+        1597,
+        17.45
+      ]
+    ],
+    "first60_mean": 9.27,
+    "first60_p95": 9.04,
+    "first60_max": 150.0
+  },
+  "warmup": {
+    "label": "Warmup",
+    "total_frames": 1635,
+    "mean": 8.31,
+    "min": 0.72,
+    "max": 138.2,
+    "p50": 6.67,
+    "p95": 14.73,
+    "p99": 15.32,
+    "spikes_16ms": 9,
+    "spikes_33ms": 2,
+    "spikes_50ms": 2,
+    "spikes_100ms": 2,
+    "top10_worst": [
+      [
+        0,
+        138.2
+      ],
+      [
+        197,
+        122.49
+      ],
+      [
+        1613,
+        17.06
+      ],
+      [
+        1621,
+        16.67
+      ],
+      [
+        1622,
+        16.67
+      ],
+      [
+        1623,
+        16.67
+      ],
+      [
+        1624,
+        16.67
+      ],
+      [
+        1617,
+        16.47
+      ],
+      [
+        1614,
+        16.05
+      ],
+      [
+        1484,
+        15.98
+      ]
+    ],
+    "first60_mean": 7.88,
+    "first60_p95": 7.19,
+    "first60_max": 138.2
+  },
+  "deltas": {
+    "mean": {
+      "no_warmup": 8.45,
+      "warmup": 8.31,
+      "delta": 0.14,
+      "delta_pct": 1.7
+    },
+    "p50": {
+      "no_warmup": 6.75,
+      "warmup": 6.67,
+      "delta": 0.08,
+      "delta_pct": 1.2
+    },
+    "p95": {
+      "no_warmup": 14.68,
+      "warmup": 14.73,
+      "delta": -0.05,
+      "delta_pct": -0.3
+    },
+    "p99": {
+      "no_warmup": 16.67,
+      "warmup": 15.32,
+      "delta": 1.35,
+      "delta_pct": 8.8
+    },
+    "max": {
+      "no_warmup": 150.0,
+      "warmup": 138.2,
+      "delta": 11.8,
+      "delta_pct": 8.5
+    },
+    "first60_mean": {
+      "no_warmup": 9.27,
+      "warmup": 7.88,
+      "delta": 1.39,
+      "delta_pct": 17.6
+    },
+    "first60_p95": {
+      "no_warmup": 9.04,
+      "warmup": 7.19,
+      "delta": 1.85,
+      "delta_pct": 25.7
+    },
+    "first60_max": {
+      "no_warmup": 150.0,
+      "warmup": 138.2,
+      "delta": 11.8,
+      "delta_pct": 8.5
+    },
+    "spikes_16ms": {
+      "no_warmup": 29,
+      "warmup": 9,
+      "delta": 20
+    },
+    "spikes_33ms": {
+      "no_warmup": 2,
+      "warmup": 2,
+      "delta": 0
+    },
+    "spikes_50ms": {
+      "no_warmup": 2,
+      "warmup": 2,
+      "delta": 0
+    },
+    "spikes_100ms": {
+      "no_warmup": 1,
+      "warmup": 2,
+      "delta": -1
+    }
+  },
+  "raw_data": {
+    "no_warmup_csv": "assets/data/frametimes_no_warmup.csv",
+    "warmup_csv": "assets/data/frametimes_warmup.csv"
+  }
+}

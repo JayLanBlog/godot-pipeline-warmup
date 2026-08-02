@@ -1,0 +1,39 @@
+{
+  "workload": "Dense200",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "renderer": "Vulkan Forward+",
+  "godot_version": "4.8.dev (native warmup)",
+  "manifest_entries": 1000,
+  "warmup_time_s": 0.09,
+  "baseline": {
+    "p95": 14.73,
+    "p99": 15.32,
+    "mean": 8.31,
+    "min": 0.72,
+    "max": 138.2,
+    "spikes_16ms": 3,
+    "spikes_33ms": 2,
+    "spikes_50ms": 2,
+    "total_frames": 1635
+  },
+  "warmup": {
+    "p95": 14.73,
+    "p99": 15.32,
+    "mean": 8.31,
+    "min": 0.72,
+    "max": 138.2,
+    "spikes_16ms": 3,
+    "spikes_33ms": 2,
+    "spikes_50ms": 2,
+    "total_frames": 1635
+  },
+  "reference_report": {
+    "note": "From report.pdf (GDExtension warmup, NVIDIA 4050 Laptop)",
+    "baseline_p95": 7.15,
+    "baseline_p99": 8.33,
+    "baseline_spikes": 1,
+    "warmup_p95": 6.94,
+    "warmup_p99": 7.25,
+    "warmup_spikes": 0
+  }
+}
